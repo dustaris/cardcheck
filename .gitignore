@@ -1,0 +1,21 @@
+# This repo is PUBLIC — it exists only to serve the GitHub Pages
+# support/privacy/marketing pages. The iOS app source lives in the same
+# folder (case-insensitive macOS merged ~/Developer/gradeworth into
+# ~/Developer/GradeWorth), so everything app-related must stay untracked.
+# Do NOT remove these rules: the app embeds a live API key.
+
+GradeWorth/
+GradeWorth.xcodeproj/
+GradeWorth.xcworkspace/
+project.yml
+
+# Xcode / build artifacts
+build/
+DerivedData/
+*.xcarchive
+*.ipa
+xcuserdata/
+*.xcuserstate
+
+# macOS
+.DS_Store
