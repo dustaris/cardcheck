@@ -60,9 +60,10 @@
     <p>
       Card Check does not collect, store, or transmit any personal data. It has no accounts,
       no analytics, no advertising, and no tracking. Your card photos are analyzed entirely
-      on your device and are never uploaded. The app does connect to public card-pricing
-      services to look up market values — those requests contain only card search terms,
-      never anything that identifies you.
+      on your device and are never uploaded. Your collection and scan history sync between
+      your devices through your own private iCloud — we cannot read them. The app does
+      connect to card-pricing services to look up market values — those requests contain
+      only card search terms, never anything that identifies you.
     </p>
 
     <h2>What we don't collect</h2>
@@ -84,23 +85,33 @@
     <h2>Network use (card pricing)</h2>
     <p>
       To show market values, Card Check sends a card's name and collector number — typed by
-      you, or read from the photo on your device — to the public pricing service
-      <a href="https://pokemontcg.io" target="_blank">pokemontcg.io</a>, which returns prices
-      and a card image. When you tap a price link, the app opens TCGplayer, Cardmarket, or eBay
-      in your browser to view live or sold listings.
+      you, or read from the photo on your device — to public pricing services (such as
+      <a href="https://pokemontcg.io" target="_blank">pokemontcg.io</a> and TCGplayer's
+      marketplace search), which return prices and a card image. Graded-sale price lookups
+      are routed through a small relay we operate, which forwards only the card's catalog
+      number, keeps no logs of who asked, and stores nothing but a short-lived cache of the
+      prices themselves. When you tap a price link, the app opens TCGplayer, Cardmarket, or
+      eBay in your browser to view live or sold listings.
     </p>
     <p>
-      These requests contain only the card search terms. They do not include your name, account,
+      These requests contain only card search terms. They do not include your name, account,
       location, device identifiers, or any other personal information. We do not log or store
       these lookups. The third-party services you connect to (pokemontcg.io, TCGplayer,
       Cardmarket, eBay) operate under their own privacy policies.
     </p>
 
-    <h2>What is stored on your device</h2>
+    <h2>Your collection: on your device, synced through your iCloud</h2>
     <p>
-      Card Check keeps only standard iOS app state and temporary image caches in the app's
-      private container on your device. Nothing is synced or transmitted. Deleting the app
-      erases this data permanently.
+      Your collection, scan history, and app state live in the app's private container on
+      your device. If you are signed in to iCloud, they also sync between your own devices
+      through Apple's CloudKit <em>private database</em> — storage that belongs to your
+      personal iCloud account. We have no ability to read, access, or share anything in it;
+      Apple's design makes it visible only to you. No iCloud account? The app simply keeps
+      everything on-device.
+    </p>
+    <p>
+      Deleting the app erases the local data. Your synced copy can be removed by deleting
+      the app's iCloud data in Settings → Apple ID → iCloud → Manage Account Storage.
     </p>
 
     <h2>Children</h2>
@@ -121,7 +132,7 @@
       <a href="mailto:darrenustaris@gmail.com">darrenustaris@gmail.com</a>.
     </p>
 
-    <p class="updated">Last updated: May 31, 2026</p>
+    <p class="updated">Last updated: July 25, 2026</p>
   </div>
 </body>
 </html>
